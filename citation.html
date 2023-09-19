@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citation</title>
+    <style>
+    body {
+        background-color: rgb(123, 171, 185);
+        width: 50%;
+        height: 20%;
+        padding-left: 10%;
+    }
+     h2,button,span {
+        color: rgb(216, 7, 24);
+    }
+    P {
+        color: rgb(43, 42, 40);
+    }
+    </style>
+</head>
+<body>
+    <h2>Les citations aléatoires</h2>
+    <img src="téléchargement (1).jpeg" alt="image" width="20%" height="10%">
+    <p>Generateur qui nous donne des <span>citations de Victor Hugo.
+        Il est un poète, un dramaturge, prosateur et dessinateur romantique français, né le 26 février 1802 (7 ventôse an X selon le calendrier républicain encore en vigueur) à Besançon et mort le 22 mai 1885 à Paris. 
+    </span>  </p>
+    <button onclick="idi()">générer les citations aléatoires</button>
+    <P id="demo"></P>
+   
+    <SCript>
+       var names = [
+        "Soyez comme l'arbre, changez vos feuilles, mais jamais vos racines. Vous pouvez changer vos opinions, mais jamais vos principes.",
+        "“On a voulu, à tort, faire de la bourgeoisie une classe. La bourgeoisie est tout simplement la portion contentée du peuple.”" ,
+        "Chaque enfant qu'on enseigne est un homme qu'on gagne. L'ignorance est la nuit qui commence l'abîme.", 
+        "Le bonheur suprême de la vie, c'est la conviction qu'on est aimé, aimé pour soi-même, disons mieux, aimé malgré soi-même.",
+         "Le peuple donne son sang et son argent, moyennant quoi on le mène.",
+        
+          "Aucune grâce extérieure n'est complète si la beauté intérieure ne la vivifie. La beauté de l'âme se répand comme une lumière mystérieuse sur la beauté du corps.", 
+          "“Il vient une heure où protester ne suffit plus : après la philosophie, il faut l’action.”",
+          "L'instinct, c'est l'âme à quatre pattes ; la pensée, c'est l'esprit debout.",
+          "Chaque enfant qu'on enseigne est un homme qu'on gagne. L'ignorance est la nuit qui commence l'abîme.",
+          "La guerre, c'est la guerre des hommes ; la paix, c'est la guerre des idées.",
+          "“Faire rire, c’est faire oublier. Quel bienfaiteur sur la terre, qu’un distributeur d’oubli !”",
+          "“La femme a une puissance singulière qui se compose de la réalité de la force et de l’apparence de la faiblesse.”",
+          "“L’avenir, fantôme aux mains vides, qui promet tout et qui n’a rien !”",
+          "“On passe une moitié de sa vie à attendre ceux qu’on aimera et l’autre moitié à quitter ceux qu’on aime.”",
+          "“La femme a une puissance singulière qui se compose de la réalité de la force et de l’apparence de la faiblesse.”"
+        ] 
+       
+
+
+
+
+
+
+       function idi() {
+        var randomIndex = Math.floor(Math.random()* names.length);
+        var randomName = names[randomIndex];
+        document.getElementById("demo").innerHTML="Citations :" + randomName;
+       }
+    
+    </SCript>
+</body>
+</html>
